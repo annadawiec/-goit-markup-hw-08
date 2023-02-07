@@ -1,0 +1,38 @@
+.clients {
+  padding-top: 94px;
+
+  &__tittle {
+    line-height: 1.17;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+
+  &__icon {
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    cursor: pointer;
+
+    &:hover {
+      fill: $mainBlue;
+      border: 1px solid $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:focus {
+      fill: $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__item {
+    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+}
