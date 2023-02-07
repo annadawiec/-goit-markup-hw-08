@@ -1,0 +1,52 @@
+.team {
+  background-color: $teamBackground;
+  height: 708px;
+
+  &__tittle {
+    line-height: 1.17;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Roboto";
+    font-weight: 700;
+  }
+
+  &__item {
+    margin-right: 30px;
+    background-color: $mainBackground;
+    width: 270px;
+    height: 428px;
+    border-block: 1px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__img {
+    margin: 0;
+    display: block;
+  }
+
+  &__details {
+    padding-top: 30px;
+    margin-right: 0;
+  }
+
+  &__member {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.17;
+    text-align: center;
+    margin-top: 30px;
+    margin: 0;
+  }
+
+  &__position {
+    font-size: 16px;
+    line-height: 1.17;
+    color: $contactColor;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
