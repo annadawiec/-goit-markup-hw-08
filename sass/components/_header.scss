@@ -1,0 +1,49 @@
+.header {
+  background-color: $mainBackground;
+  border: 1px solid $borderColor;
+
+  &__container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__logo {
+    > .logo {
+      width: 145px;
+      height: 31px;
+      padding-right: 50px;
+    }
+  }
+
+  &__contact {
+    color: $contactColor;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-decoration: none;
+    padding-top: 32px;
+    font-weight: 500;
+    padding-left: 50px;
+
+    &:hover,
+    &:focus {
+      color: $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      svg {
+        fill: $mainBlue;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    &__icon {
+      margin-right: 10px;
+      fill: $contactColor;
+    }
+  }
+}
