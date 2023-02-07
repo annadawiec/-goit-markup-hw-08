@@ -1,0 +1,32 @@
+.strenghs {
+  padding-top: 94px;
+
+  &__item {
+    box-sizing: border-box;
+    margin-right: 30px;
+    width: 270px;
+    border-block: 1px;
+  }
+
+  &__icon {
+    margin: 0;
+    background-color: $teamBackground;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__tittle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $contactColor;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
