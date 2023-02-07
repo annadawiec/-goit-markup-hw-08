@@ -1,0 +1,100 @@
+.footer {
+  height: 252px;
+  background: $footerBackground;
+  color: $mainBackground;
+  margin-top: 94px;
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  &__logo {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  &__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    padding-bottom: 9px;
+  }
+
+  &__contact {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 9px;
+  }
+
+  &__mail:hover {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__phone {
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    color: $footerMail;
+    padding-bottom: 60px;
+    padding-right: 30px;
+
+    &:hover,
+    &:focus {
+      color: $mainBackground;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__mail {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $footerMail;
+    text-decoration: underline;
+    width: 231px;
+    height: 21px;
+    padding-bottom: 9px;
+    padding-right: 30px;
+
+    &:hover,
+    &:focus {
+      color: $mainBackground;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__item {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      background-color: $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: $mainBackground;
+    }
+  }
+
+  &__sm {
+    list-style-type: none;
+    display: flex;
+    gap: 22px;
+    padding-left: 0;
+    margin-top: 20px;
+    gap: 10px;
+    cursor: pointer;
+  }
+}
