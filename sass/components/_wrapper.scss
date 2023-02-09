@@ -20,9 +20,6 @@
   margin: auto;
 
   &__tittle {
-    font-size: 26px;
-    @include desktop {
-      font-size: 44px;
-    }
+    font-size: 44px;
   }
 }
