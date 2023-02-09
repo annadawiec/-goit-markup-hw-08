@@ -1,6 +1,14 @@
 .navigation {
-  display: flex;
-  flex: 1;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex: 1;
+  }
+
+  @include desktop {
+    display: flex;
+    flex: 1;
+  }
 
   &__list {
     list-style-type: none;
