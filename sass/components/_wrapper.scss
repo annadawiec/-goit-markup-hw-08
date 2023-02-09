@@ -21,12 +21,8 @@
 
   &__tittle {
     font-size: 26px;
-    @include tablet {
-      font-size: 26px;
-    }
     @include desktop {
       font-size: 44px;
-      line-height: 1.36;
     }
   }
 }
