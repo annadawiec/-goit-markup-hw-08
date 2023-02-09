@@ -1,6 +1,9 @@
 .overview {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  display: none;
+  @include desktop {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 
   &__tittle {
     line-height: 1.17;
