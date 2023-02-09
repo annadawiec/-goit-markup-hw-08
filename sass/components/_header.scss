@@ -1,6 +1,12 @@
 .header {
   background-color: $mainBackground;
   border: 1px solid $borderColor;
+  height: 60px;
+  align-items: center;
+  @include tablet {
+  }
+  @include desktop {
+  }
 
   &__container {
     height: 80px;
@@ -9,6 +15,8 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+    @include tablet {
+    }
   }
 
   &__logo {
@@ -16,12 +24,26 @@
       width: 145px;
       height: 31px;
       padding-right: 50px;
+      margin-top: 16px;
+    }
+  }
+
+  &__contacts {
+    display: none;
+    @include tablet {
+      display: block;
     }
   }
 
   &__contact {
-    display: none;
     @include tablet {
+      color: $contactColor;
+      font-size: 14px;
+      line-height: 16.41px;
+      text-decoration: none;
+      padding-top: 32px;
+      font-weight: 500;
+      padding-left: 50px;
     }
     @include desktop {
       color: $contactColor;
