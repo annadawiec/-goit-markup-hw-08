@@ -1,24 +1,40 @@
 .logo {
+  font-size: 24px;
   color: $logoColor;
   font-weight: 700;
-  font-size: 26px;
   text-decoration: none;
   line-height: 1.17;
+  padding-left: 15px;
+  @include tablet {
+  }
+  @include desktop {
+    font-size: 26px;
+  }
 
   &__part-blue {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.17;
     color: $mainBlue;
     text-decoration: none;
+    @include tablet {
+    }
+    @include desktop {
+      font-size: 26px;
+    }
   }
 
   &__part-white {
-    font-size: 26px;
+    font-size: 24px;
     text-decoration: none;
     line-height: 1.17;
     color: $mainBackground;
     font-family: "Raleway";
     font-weight: 700;
+    @include tablet {
+    }
+    @include desktop {
+      font-size: 26px;
+    }
   }
 }
