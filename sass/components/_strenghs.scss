@@ -1,11 +1,22 @@
 .strenghs {
-  padding-top: 94px;
+  padding-top: 60px;
+  @include tablet {
+  }
+  @include desktop {
+    padding-top: 94px;
+  }
 
   &__item {
     box-sizing: border-box;
-    margin-right: 30px;
-    width: 270px;
+    margin-right: 15px;
+    max-width: 450px;
     border-block: 1px;
+    @include tablet {
+    }
+    @include desktop {
+      margin-right: 30px;
+      width: 270px;
+    }
   }
 
   &__icon {
