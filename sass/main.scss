@@ -1,7 +1,7 @@
-@use "./utils/_vars" as *;
-@use "./utils/mixins" as *;
-@import "./utils/onetime";
+@import "./utils/mixins";
 @import "./utils/common";
+@import "./utils/vars";
+@import "./utils/onetime";
 @import "./components/header";
 @import "./components/navigation";
 @import "./components/wrapper";
