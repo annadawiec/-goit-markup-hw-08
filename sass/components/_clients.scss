@@ -23,16 +23,15 @@
     fill: #afb1b8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    width: 210px;
+    max-width: 210px;
     height: 92px;
     padding: 16px 32px;
     cursor: pointer;
     @include tablet {
-      width: 210px;
+      width: 226px;
       height: 92px;
     }
     @include desktop {
-      padding: 16px 32px;
       width: 170px;
       height: 92px;
     }
@@ -49,14 +48,8 @@
     }
   }
   &__item {
-    width: 210px;
-    height: 92px;
-    @include tablet {
-    }
-    @include desktop {
-      margin-right: 30px;
-      position: relative;
-      overflow: hidden;
-    }
+    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
   }
 }
