@@ -1,11 +1,11 @@
 .header {
   background-color: $mainBackground;
   border: 1px solid $borderColor;
-  height: 60px;
-  align-items: center;
   @include tablet {
   }
   @include desktop {
+    background-color: $mainBackground;
+    border: 1px solid $borderColor;
   }
 
   &__container {
