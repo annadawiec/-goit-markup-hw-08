@@ -6,9 +6,12 @@
   list-style-type: none;
   margin: auto;
   padding-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
   @include desktop {
     display: flex;
     padding-left: 0;
+    flex-wrap: nowrap;
   }
 }
 
