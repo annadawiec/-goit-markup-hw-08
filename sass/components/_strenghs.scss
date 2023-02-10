@@ -17,6 +17,10 @@
     @include desktop {
       margin-right: 30px;
       width: 270px;
+      box-sizing: border-box;
+      margin-right: 30px;
+      width: 270px;
+      border-block: 1px;
     }
   }
 
@@ -33,13 +37,20 @@
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
-  }
+    @include desktop {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-  &__description {
-    font-size: 14px;
-    line-height: 1.71;
-    color: $contactColor;
-    margin-top: 10px;
-    margin-bottom: 30;
+    &__description {
+      font-size: 14px;
+      line-height: 1.71;
+      color: $contactColor;
+      margin-top: 10px;
+      margin-bottom: 30;
+      @include desktop {
+        margin-bottom: 0;
+      }
+    }
   }
 }
