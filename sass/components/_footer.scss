@@ -1,31 +1,86 @@
 .footer {
-  height: 252px;
+  height: 603px;
   background: $footerBackground;
   color: $mainBackground;
   margin-top: 94px;
 
+  @include tablet {
+    height: 463px;
+  }
+  @include desktop {
+    height: 252px;
+    background: $footerBackground;
+    color: $mainBackground;
+    margin-top: 94px;
+  }
+
   &__list {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     list-style-type: none;
     padding-left: 0px;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      padding-left: 0px;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      padding-left: 0px;
+    }
   }
 
   &__logo {
+    text-align: center;
     padding-top: 60px;
     padding-bottom: 20px;
+    @include tablet {
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
+    @include desktop {
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
   }
 
   &__address {
+    text-align: center;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     padding-bottom: 9px;
+    @include tablet {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      padding-bottom: 9px;
+    }
+    @include desktop {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      padding-bottom: 9px;
+    }
   }
 
   &__contact {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 9px;
+    text-align: center;
+    @include tablet {
+    }
+    @include desktop {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 9px;
+    }
   }
 
   &__mail:hover {
@@ -90,11 +145,18 @@
 
   &__sm {
     list-style-type: none;
-    display: flex;
-    gap: 22px;
-    padding-left: 0;
     margin-top: 20px;
+    display: flex;
     gap: 10px;
     cursor: pointer;
+    align-content: center;
+    width: 206px;
+    padding-left: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    @include desktop {
+      gap: 22px;
+      padding-left: 0;
+    }
   }
 }
