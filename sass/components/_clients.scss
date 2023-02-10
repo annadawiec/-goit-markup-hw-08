@@ -1,23 +1,40 @@
 .clients {
-  padding-top: 94px;
+  padding-top: 60px;
+  @include tablet {
+  }
+  @include desktop {
+    margin-bottom: 94px;
+  }
 
   &__tittle {
     line-height: 1.17;
     text-align: center;
     padding-bottom: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 0;
+    @include tablet {
+    }
+    @include desktop {
+      margin-bottom: 50px;
+    }
   }
 
   &__icon {
     fill: #afb1b8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    width: 170px;
+    max-width: 210px;
     height: 92px;
     padding: 16px 32px;
     cursor: pointer;
-
+    @include tablet {
+      width: 226px;
+      height: 92px;
+    }
+    @include desktop {
+      width: 170px;
+      height: 92px;
+    }
     &:hover {
       fill: $mainBlue;
       border: 1px solid $mainBlue;
