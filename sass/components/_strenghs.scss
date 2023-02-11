@@ -1,6 +1,5 @@
 .strenghs {
   padding-top: 60px;
-
   @include tablet {
   }
   @include desktop {
@@ -34,24 +33,33 @@
     justify-content: center;
   }
 
-  &__tittle {
+  &__title {
     margin-top: 30px;
     margin-bottom: 10px;
-    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
     @include desktop {
       margin-top: 30px;
       margin-bottom: 10px;
     }
+  }
+  &__description {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    color: $contactColor;
+    margin-top: 10px;
+    margin-bottom: 30;
+    font-family: "Roboto";
+    font-weight: 400;
+    flex-wrap: wrap;
+    letter-spacing: 0.03em;
 
-    &__description {
-      font-size: 14px;
-      line-height: 1.71;
-      color: $contactColor;
-      margin-top: 10px;
-      margin-bottom: 30;
-      @include desktop {
-        margin-bottom: 0;
-      }
+    @include desktop {
+      margin-bottom: 0;
     }
   }
 }
