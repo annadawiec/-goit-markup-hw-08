@@ -6,7 +6,7 @@
     margin-bottom: 94px;
   }
 
-  &__tittle {
+  &__title {
     line-height: 1.17;
     text-align: center;
     padding-bottom: 0;
@@ -27,14 +27,18 @@
     height: 92px;
     padding: 16px 32px;
     cursor: pointer;
-    @include tablet {
-      width: 226px;
-      height: 92px;
-    }
     @include desktop {
       width: 170px;
       height: 92px;
     }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    flex-basis: calc((100% - (1 * 30px)) / 2);
+    gap: 30px;
+    margin-bottom: 30px;
     &:hover {
       fill: $mainBlue;
       border: 1px solid $mainBlue;
@@ -43,13 +47,19 @@
     }
     &:focus {
       fill: $mainBlue;
+      border: 1px solid $mainBlue;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-  }
-  &__item {
-    margin-right: 30px;
-    position: relative;
-    overflow: hidden;
+    @include tablet {
+      flex-basis: calc((100% - (1 * 30px)) / 3);
+      width: 226px;
+      height: 92px;
+    }
+    @include desktop {
+      margin-right: 30px;
+      position: relative;
+      overflow: hidden;
+    }
   }
 }
