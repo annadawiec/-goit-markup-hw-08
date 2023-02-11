@@ -40,9 +40,9 @@
   @include tablet {
   }
   @include desktop {
-    margin-left: 70px;
     margin-top: 72px;
     font-family: "Roboto";
     font-weight: 700;
+    text-align: left;
   }
 }
