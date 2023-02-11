@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background: $mainBackground;
+  color: $mainColor;
+}
+
 .list {
   list-style-type: none;
   margin: auto;
