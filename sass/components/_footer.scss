@@ -17,20 +17,25 @@
   &__list {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     list-style-type: none;
     padding-left: 0px;
+    flex-direction: column;
+    gap: 60;
     @include tablet {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       list-style-type: none;
       padding-left: 0px;
+      gap: 70px;
     }
     @include desktop {
       display: flex;
-      flex-direction: row;
       list-style-type: none;
       padding-left: 0px;
+      text-align: left;
+      flex-wrap: nowrap;
+      gap: 70px;
     }
   }
 
@@ -46,6 +51,7 @@
     @include desktop {
       padding-top: 60px;
       padding-bottom: 20px;
+      text-align: left;
     }
   }
 
@@ -55,6 +61,7 @@
     font-size: 14px;
     line-height: 1.71;
     padding-bottom: 9px;
+    font-family: "Roboto";
     @include tablet {
       font-style: normal;
       font-size: 14px;
@@ -66,6 +73,7 @@
       font-size: 14px;
       line-height: 1.71;
       padding-bottom: 9px;
+      text-align: left;
     }
   }
 
@@ -74,12 +82,14 @@
     margin-bottom: 0;
     padding-bottom: 9px;
     text-align: center;
+    font-family: "Roboto";
     @include tablet {
     }
     @include desktop {
       margin-top: 0;
       margin-bottom: 0;
       padding-bottom: 9px;
+      text-align: left;
     }
   }
 
