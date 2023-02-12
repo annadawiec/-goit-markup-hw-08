@@ -1,5 +1,6 @@
 .clients {
   padding-top: 60px;
+
   @include tablet {
   }
   @include desktop {
@@ -25,20 +26,9 @@
     border-radius: 4px;
     max-width: 210px;
     height: 92px;
-    padding: 16px 32px;
     cursor: pointer;
-    @include desktop {
-      width: 170px;
-      height: 92px;
-    }
-  }
-
-  &__item {
-    position: relative;
-    overflow: hidden;
-    flex-basis: calc((100% - (1 * 30px)) / 2);
+    padding: 16px 52px;
     gap: 30px;
-    margin-bottom: 30px;
     &:hover {
       fill: $mainBlue;
       border: 1px solid $mainBlue;
@@ -51,13 +41,26 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    @include desktop {
+      width: 170px;
+      height: 92px;
+      border-radius: 4px;
+      padding: 16px 32px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    flex-basis: calc((100% - (1 * 30px)) / 2);
+    margin-bottom: 30px;
     @include tablet {
       flex-basis: calc((100% - (1 * 30px)) / 3);
       width: 226px;
       height: 92px;
     }
     @include desktop {
-      margin-right: 30px;
       position: relative;
       overflow: hidden;
     }
