@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-bottom: 24px;
 
   &__list {
     list-style-type: none;
     display: flex;
-    gap: 22px;
+    gap: 10px;
     padding-left: 0;
   }
 
