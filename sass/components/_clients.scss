@@ -52,20 +52,14 @@
 
   &__item {
     position: relative;
-    flex-basis: calc((100% - (1 * 30px)) / 2);
     margin-bottom: 30px;
-    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
     @include tablet {
       flex-basis: calc((100% - (1 * 30px)) / 3);
-      width: 226px;
-      height: 92px;
-      @include tablet {
-        width: calc(100% / 3 - 30px);
-      }
-      @include desktop {
-        position: relative;
-        width: calc(100% / 6 - 30px);
-      }
+    }
+    @include desktop {
+      position: relative;
+      width: calc(100% / 6 - 30px);
     }
   }
 }
