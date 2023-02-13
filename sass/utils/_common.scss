@@ -12,8 +12,11 @@ body {
   list-style-type: none;
   margin: auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
+  @include tablet {
+  }
   @include desktop {
     display: flex;
     padding-left: 0;
