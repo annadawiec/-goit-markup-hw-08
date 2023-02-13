@@ -4,6 +4,8 @@
   margin-top: 60px;
   padding-bottom: 60px;
 
+  margin: 60px auto 0 auto;
+
   &__tittle {
     line-height: 1.17;
     text-align: center;
@@ -31,13 +33,15 @@
   &__img {
     margin: 0;
     display: block;
-    max-width: 100%;
+    width: auto;
+    height: auto;
   }
 
   &__details {
     padding-top: 30px;
     margin-right: 0;
-    max-width: 100%;
+    width: auto;
+    height: auto;
   }
 
   &__member {

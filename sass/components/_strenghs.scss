@@ -13,6 +13,7 @@
     border-block: 1px;
     @include tablet {
       flex-basis: calc((100% - (1 * 30px)) / 2);
+      max-width: 450px;
     }
     @include desktop {
       margin-right: 30px;
